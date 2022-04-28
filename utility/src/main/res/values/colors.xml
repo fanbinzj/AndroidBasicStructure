@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic color definitions -->
+    <color name="orange">#FFA500</color>
+    <color name="sky_blue">#0000FF</color>
+
+    <color name="general_main_screen_background">@color/orange</color>
+</resources>
