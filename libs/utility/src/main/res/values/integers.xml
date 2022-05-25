@@ -1,0 +1,5 @@
+<resources>
+    <integer name="view_visible">0</integer> <!-- This is VISIBLE -->
+    <integer name="view_invisible">1</integer> <!-- This is INVISIBLE -->
+    <integer name="view_gone">2</integer> <!-- This is GONE -->
+</resources>

@@ -13,6 +13,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "SingleRepo1"
+
 include ':orange'
 include ':blue'
-include ':utility'
+
+include ':libs:utility'
+
+include ':features:coffee'
