@@ -1,7 +1,9 @@
 package com.binfan.basicStructure.coffee
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.binfan.basicStructure.coffee.content.ContentActivity
 import com.binfan.basicStructure.coffee.databinding.ActivityCoffeeBinding
 import com.binfan.basicStructure.utility.Utils
 import com.binfan.basicStructure.utility.R
@@ -22,6 +24,10 @@ class CoffeeActivity : AppCompatActivity() {
 
         binding.versionButton.setOnClickListener {
             binding.dateText.text = Utils.convertDateToShort("19-05-2022")
+        }
+
+        binding.mvvmButton.setOnClickListener {
+            startActivity(Intent(this, ContentActivity::class.java))
         }
     }
 
