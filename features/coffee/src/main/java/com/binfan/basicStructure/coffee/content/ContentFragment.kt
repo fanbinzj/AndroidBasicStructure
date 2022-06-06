@@ -27,6 +27,8 @@ class ContentFragment : Fragment() {
 
         ui.viewStateBinding = ViewStateBinding()
 
+        ui.lifecycleOwner = this
+
         return ui.root
     }
 }

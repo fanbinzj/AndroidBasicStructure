@@ -1,4 +1,4 @@
-package com.binfan.basicStructure.coffee.content
+package com.binfan.basicStructure.databinding
 
 import androidx.databinding.BindingAdapter
 import android.view.View
