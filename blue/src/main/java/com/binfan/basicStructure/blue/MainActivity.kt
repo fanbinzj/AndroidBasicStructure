@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.binfan.basicStructure.blue.databinding.ActivityMainBinding
 import com.binfan.basicStructure.coffee.CoffeeActivity
+import com.binfan.basicStructure.mvpexample.MvpExampleActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.clickButton.setOnClickListener {
             startActivity(Intent(this, CoffeeActivity::class.java))
+        }
+
+        binding.mvpButton.setOnClickListener {
+            startActivity(Intent(this, MvpExampleActivity::class.java))
         }
     }
 }

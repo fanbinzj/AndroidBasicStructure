@@ -20,3 +20,6 @@ include ':blue'
 include ':libs:utility'
 
 include ':features:coffee'
+include ':libs:databinding'
+include ':features:mvp-example'
+include ':libs:extensions'

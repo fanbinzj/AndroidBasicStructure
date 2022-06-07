@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.binfan.basicStructure.coffee.CoffeeActivity
-import com.binfan.basicStructure.coffee.content.ContentActivity
 import com.binfan.basicStructure.orange.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.contentButton.setOnClickListener {
-            startActivity(Intent(this, ContentActivity::class.java))
         }
     }
 }
