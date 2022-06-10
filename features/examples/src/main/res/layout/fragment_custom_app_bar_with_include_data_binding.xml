@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".appbar.customizeWithDataBinding.CustomAppbarExampleActivity">
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="viewData"
+            type="com.binfan.basicStructure.examples.appbar.customizeWithDataBinding.ViewData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/layout_customized_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_quarter_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:toolBarViewData="@{ viewData.toolbarViewData }"
+            />
+
+        <View
+            android:id="@+id/app_bar_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:elevation="1dp"
+            android:background="#000000"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_include"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/enter_chargenet_id_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Customized tool bar with data binding"
+            android:layout_marginStart="@dimen/default_one_and_a_half_margin"
+            android:layout_marginEnd="@dimen/default_one_and_a_half_margin"
+            android:layout_marginTop="@dimen/default_double_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar_divider" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
