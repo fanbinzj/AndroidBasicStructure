@@ -8,7 +8,7 @@ class CustomAppbarExampleActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        actionBar?.hide()
+        supportActionBar?.hide()
 
         supportFragmentManager.beginTransaction().replace(
             android.R.id.content, CustomAppbarExampleFragment()
