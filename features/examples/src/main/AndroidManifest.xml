@@ -4,7 +4,9 @@
 
     <application>
 
-        <activity android:name=".appbar.AppbarExampleActivity" />
+        <activity android:name=".appbar.ownedbyactivity.AppbarExampleActivity" />
+
+        <activity android:name=".appbar.ownedbyfragment.AppbarExample2Activity" />
 
     </application>
 </manifest>

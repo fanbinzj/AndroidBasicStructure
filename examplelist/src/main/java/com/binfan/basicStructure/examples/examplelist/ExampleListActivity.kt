@@ -3,7 +3,8 @@ package com.binfan.basicStructure.examples.examplelist
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import com.binfan.basicStructure.examples.appbar.AppbarExampleActivity
+import com.binfan.basicStructure.examples.appbar.ownedbyactivity.AppbarExampleActivity
+import com.binfan.basicStructure.examples.appbar.ownedbyfragment.AppbarExample2Activity
 import com.binfan.basicStructure.examples.examplelist.databinding.ActivityExampleListBinding
 
 class ExampleListActivity: Activity() {
@@ -18,6 +19,10 @@ class ExampleListActivity: Activity() {
 
         binding.appbarActivityButton.setOnClickListener {
             startActivity(Intent(this, AppbarExampleActivity::class.java))
+        }
+
+        binding.appbarActivity2Button.setOnClickListener {
+            startActivity(Intent(this, AppbarExample2Activity::class.java))
         }
     }
 }
