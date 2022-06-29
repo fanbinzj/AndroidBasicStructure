@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.binfan.basicStructure.examples.appbar.customizeWithDataBinding.CustomAppbarExampleActivity
 import com.binfan.basicStructure.examples.appbar.ownedbyactivity.AppbarExampleActivity
 import com.binfan.basicStructure.examples.appbar.ownedbyfragment.AppbarExample2Activity
+import com.binfan.basicStructure.examples.compose.HelloComposeActivity
 import com.binfan.basicStructure.examples.examplelist.databinding.ActivityExampleListBinding
 
 class ExampleListActivity: Activity() {
@@ -28,6 +29,10 @@ class ExampleListActivity: Activity() {
 
         binding.customizedAppbarActivityButton.setOnClickListener {
             startActivity(Intent(this, CustomAppbarExampleActivity::class.java))
+        }
+
+        binding.helloComposeActivityButton.setOnClickListener {
+            startActivity(Intent(this, HelloComposeActivity::class.java))
         }
     }
 }
